@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра:" В кого більше число"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+        <h1>Гра "Користувач vs Комп'ютер"</h1>
+        <div class="players">
+            <label for="userName">Ім'я гравця:</label>
+            <input type="text" id="userName" placeholder="Введіть ім'я">
+        </div>
+        <div class="numbers">
+            <div class="player" id="user">
+                <img src="user_avatar.jpg" alt="Avatar"> <!-- Додано аватар гравця -->
+                <h2 id="userLabel"></h2>
+                <p id="userNumber"></p>
+            </div>
+            <div class="player" id="computer">
+                <img src="computer_avatar.png" alt="Avatar"> <!-- Додано аватар комп'ютера -->
+                <h2>Комп'ютер</h2>
+                <p id="computerNumber"></p>
+            </div>
+        </div>
+        <button onclick="generateNumbers()">Генерувати</button>
+        <p id="userScore">Рахунок гравця: 0</p>
+        <p id="computerScore">Рахунок комп'ютера: 0</p>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
